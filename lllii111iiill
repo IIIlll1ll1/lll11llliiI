@@ -1,4 +1,6 @@
-return {
-"df2d6f54-13d9-4e88-a2de-e6cd1b962fda"
-"76591F60-96A0-4E09-B174-46A4BFD65461"
+keys = {
+[illiii111iillIII] = true, -- Random key!
+[KEY HERE1] = true,
+[KEY HERE2] = true
 }
+return keys
