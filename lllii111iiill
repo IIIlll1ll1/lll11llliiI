@@ -1,6 +1,3 @@
-userids = {
-[2802819529] = true, -- this is my userid, remove it and add as much as you want in it.
-[511980798] = true,
-[USERIDHERE] = true
+return {
+"df2d6f54-13d9-4e88-a2de-e6cd1b962fda"
 }
-return userids
