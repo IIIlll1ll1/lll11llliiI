@@ -1,5 +1,6 @@
-return {
- "df2d6f54-13d9-4e88-a2de-e6cd1b962fda"
- "76591F60-96A0-4E09-B174-46A4BFD65461"
- "5e20cad4-57a5-4dfc-b08d-4b34f4c475f0"
+userids = {
+[2802819529] = true, -- this is my userid, remove it and add as much as you want in it.
+[511980798] = true,
+[USERIDHERE] = true
 }
+return userids
