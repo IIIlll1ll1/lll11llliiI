@@ -64,7 +64,7 @@ function ZainandansNS:Notify(t,d)
 
     wait(d)
 
-    for i = 1, 0, 0.1 do
+    for i = 0, 1, 0.1 do
         Notify.TextTransparency = i
     end
 
