@@ -14,7 +14,7 @@ NotificationList.Name = "NotificationList"
 NotificationList.Parent = AlwayswinNotificationSystem
 NotificationList.AnchorPoint = Vector2.new(0.5, 0.5)
 NotificationList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NotificationList.BackgroundTransparency = 0.800
+NotificationList.BackgroundTransparency = 1
 NotificationList.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NotificationList.BorderSizePixel = 0
 NotificationList.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -44,7 +44,7 @@ Notify.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding.Parent = NotificationList
 UIPadding.PaddingLeft = UDim.new(0.01, 0)
 
-function ZainandansNS:Notification(t,d)
+function ZainandansNS:Notify(t,d)
     local Notify = Instance.new("TextLabel")
     Notify.Name = "Notify"
     Notify.Parent = NotificationList
