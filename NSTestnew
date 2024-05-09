@@ -1,13 +1,15 @@
+if game.CoreGui:FindFirstChild("AlwayswinNotificationSystem") then
+    game.CoreGui.AlwayswinNotificationSystem:Destroy()
+end
 local ZainandansNS = {}
 
 local AlwayswinNotificationSystem = Instance.new("ScreenGui")
 local NotificationList = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
---local Notify = Instance.new("TextLabel")
 local UIPadding = Instance.new("UIPadding")
 
 AlwayswinNotificationSystem.Name = "AlwayswinNotificationSystem"
-AlwayswinNotificationSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AlwayswinNotificationSystem.Parent = game.CoreGui
 AlwayswinNotificationSystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 NotificationList.Name = "NotificationList"
@@ -23,24 +25,6 @@ NotificationList.Size = UDim2.new(1, 0, 1, 0)
 UIListLayout.Parent = NotificationList
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
---[[
-Notify.Name = "Notify"
-Notify.Parent = NotificationList
-Notify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Notify.BackgroundTransparency = 1.000
-Notify.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Notify.BorderSizePixel = 0
-Notify.Position = UDim2.new(-1.72238881e-08, 0, 0.0101651838, 0)
-Notify.Size = UDim2.new(1, 0, 0.0228716638, 0)
-Notify.Font = Enum.Font.SourceSansBold
-Notify.Text = "Notify Content"
-Notify.TextColor3 = Color3.fromRGB(255, 255, 255)
-Notify.TextScaled = true
-Notify.TextSize = 14.000
-Notify.TextWrapped = true
-Notify.TextXAlignment = Enum.TextXAlignment.Left
-]]
-
 UIPadding.Parent = NotificationList
 UIPadding.PaddingLeft = UDim.new(0.01, 0)
 
@@ -52,13 +36,11 @@ function ZainandansNS:Notify(t,d)
     Notify.BackgroundTransparency = 1.000
     Notify.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Notify.BorderSizePixel = 0
-    Notify.Position = UDim2.new(-1.72238881e-08, 0, 0.0101651838, 0)
     Notify.Size = UDim2.new(1, 0, 0.0228716638, 0)
     Notify.Font = Enum.Font.SourceSansBold
     Notify.Text = tostring(t)
     Notify.TextColor3 = Color3.fromRGB(255, 255, 255)
     Notify.TextScaled = true
-    Notify.TextSize = 14.000
     Notify.TextWrapped = true
     Notify.TextXAlignment = Enum.TextXAlignment.Left
 
