@@ -66,6 +66,7 @@ function ZainandansNS:Notify(t,d)
 
     for i = 0, 1, 0.1 do
         Notify.TextTransparency = i
+        wait(0.05)
     end
 
     Notify:Destroy()
